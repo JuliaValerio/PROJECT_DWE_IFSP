@@ -1,0 +1,55 @@
+
+.navbar {
+//  @include flex(center,space-around);
+  width: 100%;
+  padding: 2px;
+  position: fixed;
+  top: 0px;
+  text-align: end;
+  transition: 0.5s;
+  background: #a9ffec60;
+  z-index: 99;
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  ul li:hover {
+    background: rgba(0, 140, 255, 0.384);
+  }
+
+  img {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+.content {
+    @include flex (center , space-around);
+    flex-direction: row;
+    text-justify: auto;
+    text-align: justify;
+    width: 80%;
+
+    h1{
+        color: rgb(38, 23, 248);
+    }
+
+  img {
+    margin: 3%;
+    width: 30%;
+      border-radius: none;
+  }
+}
+
+    
