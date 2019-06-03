@@ -6,7 +6,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-nav {
+.nav__bg {
   width: 100%;
   padding: 15px;
   position: fixed;
@@ -15,10 +15,12 @@ nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #ff00c863;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
   z-index: 99;
 }
 
-nav ul li {
+.nav__bg ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px 50px;
@@ -28,12 +30,45 @@ nav ul li {
   border-radius: 10px;
 }
 
-nav ul li a {
+.nav__bg ul li a {
   text-decoration: none;
   color: #ffffff;
 }
 
-nav ul li:hover {
+.nav__bg ul li:hover {
+  background: rgba(255, 0, 106, 0.384);
+}
+
+.nav__script {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  text-align: end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: transparent;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
+  z-index: 99;
+}
+
+.nav__script ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 50px;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.nav__script ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__script ul li:hover {
   background: rgba(255, 0, 106, 0.384);
 }
 
@@ -48,9 +83,10 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 9%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10%;
 }
 
 header .apresentation {
@@ -60,10 +96,9 @@ header .apresentation {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header .destination__border {
@@ -74,6 +109,8 @@ header .destination__border {
   display: flex;
   margin: 0 auto;
   margin-top: 3%;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 header h1 {
@@ -82,17 +119,22 @@ header h1 {
 }
 
 header img {
-  width: 30%;
+  width: 25%;
   border-radius: 100%;
-  border: 3px solid #63458a;
+  border: 1px solid #63458a;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 header p {
+  width: 50%;
   font-size: 18px;
   text-align: center;
   text-justify: auto;
   padding: 3%;
   color: #030a64b2;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 section {
@@ -131,7 +173,9 @@ section .quote {
   font-size: 18px;
   color: #030a64b2;
   border: 1px solid rgba(128, 0, 128, 0.541);
-  padding: 30px;
+  padding: 3%;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 .project__links {
@@ -153,15 +197,18 @@ section .quote {
 
 .project__links img {
   width: 500px;
-  border: 5px solid rgba(9, 76, 221, 0.918);
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 .project__links img:hover {
   border: 5px solid rgba(9, 76, 221, 0.918);
   -webkit-filter: none;
           filter: none;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 .container__author {
@@ -179,6 +226,8 @@ section .quote {
   width: 100%;
   height: 200px;
   margin-bottom: 3%;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
 }
 
 .container__author .info__author {
@@ -246,14 +295,6 @@ footer p {
   }
 }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
-
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +305,7 @@ footer p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  padding: 2px;
+  padding: 15px;
   position: fixed;
   top: 0px;
   text-align: end;
@@ -278,7 +319,7 @@ footer p {
   list-style-type: none;
   display: inline-block;
   padding: 10px 50px;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
   border-radius: 10px;
 }
@@ -293,20 +334,11 @@ footer p {
 }
 
 .navbar img {
-  width: 120px;
-  height: 100px;
+  width: 70px;
+  height: 50px;
 }
 
 .content {
-  margin-top: 10%;
-  text-align: center;
-}
-
-.content h1 {
-  color: #2617f8;
-}
-
-.content div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -322,10 +354,79 @@ footer p {
   text-justify: auto;
   text-align: justify;
   width: 80%;
+  margin-left: 10%;
+  margin-top: 2%;
+  -webkit-box-shadow: 0 2px 5px grey;
+          box-shadow: 0 2px 5px grey;
+}
+
+.content h1 {
+  color: #2617f8;
 }
 
 .content img {
   margin: 3%;
-  width: 50%;
+  width: 30%;
+  -webkit-box-shadow: 0 5px 5px grey;
+          box-shadow: 0 5px 5px grey;
+  border-radius: 5%;
+}
+
+.content p {
+  padding: 5%;
+}
+
+.titulo__features {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #003979c5;
+}
+
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.features div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  height: 351.812px;
+  padding: 2%;
+  border-radius: 5%;
+  -webkit-box-shadow: 0 5px 5px grey;
+          box-shadow: 0 5px 5px grey;
+  background-color: #00397971;
+  color: #ffffff;
+  text-align: center;
+  text-justify: auto;
+  font-size: 16px;
+}
+
+.features img {
+  width: 100px;
+  padding: 2%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-nav {
+.nav__bg{
   width: 100%;
   padding: 15px;
   position: fixed;
@@ -13,6 +13,7 @@ nav {
   text-align: end;
   transition: 0.5s;
   background: #ff00c863;
+  box-shadow: 0 2px 5px grey;
   z-index: 99;
 
   ul li {
@@ -35,15 +36,45 @@ nav {
   }
 }
 
+.nav__script{
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  text-align: end;
+  transition: 0.5s;
+  background: transparent;
+  box-shadow: 0 2px 5px grey;
+  z-index: 99;
+
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+
+  ul li:hover {
+    background: rgba(255, 0, 106, 0.384);
+  }
+}
+
+
 header {
   flex-direction: column;
-  @include flex(center, space-around);
-  margin-top: 9%;
+  @include flex(center, space-evenly);
+  margin-top: 10%;
 
   .apresentation {
-    @include flex(center, space-around);
-    margin-left: 10%;
-    margin-right: 10%;
+    @include flex(center, space-evenly);
   }
 
   .destination__border {
@@ -52,25 +83,30 @@ header {
     display: flex;
     margin: 0 auto;
     margin-top: 3%;
+    box-shadow: 0 2px 5px grey;
   }
 
   h1 {
     color: #030a64b2;
     text-transform: uppercase;
+    
   }
 
   img {
-    width: 30%;
+    width: 25%;
     border-radius: 100%;
-    border: 3px solid #63458a;
+    border: 1px solid #63458a;
+    box-shadow: 0 2px 5px grey;
   }
 
   p {
+    width: 50%;
     font-size: 18px;
     text-align: center;
     text-justify: auto;
     padding: 3%;
     color: #030a64b2;
+    box-shadow: 0 2px 5px grey;
   }
 }
 
@@ -92,13 +128,15 @@ section {
   .quote__container {
     @include flex(center, center);
     padding: 20px;
+    
   }
 
   .quote {
     font-size: 18px;
     color: #030a64b2;
     border: 1px solid rgba(128, 0, 128, 0.541);
-    padding: 30px;
+    padding: 3%;
+    box-shadow: 0 2px 5px grey;
   }
 }
 
@@ -106,16 +144,18 @@ section {
   @include flex(center, space-evenly);
   flex-direction: row;
   margin: 5%;
+  
 
   img {
     width: 500px;
-    border: 5px solid rgba(9, 76, 221, 0.918);
     filter: grayscale(100%);
+    box-shadow: 0 2px 5px grey;
   }
 
   img:hover {
     border: 5px solid rgba(9, 76, 221, 0.918);
     filter: none;
+    box-shadow: 0 2px 5px grey;
   }
 }
 
@@ -125,6 +165,7 @@ section {
   width: 100%;
   height: 200px;
   margin-bottom: 3%;
+  box-shadow: 0 2px 5px grey;
 
   .info__author {
     @include flex(flex-start, center);
@@ -145,6 +186,7 @@ footer {
   text-align: center;
   margin-top: 0px;
   padding: 10px 0px 10px 0px;
+  
 
   img {
     width: 25px;
