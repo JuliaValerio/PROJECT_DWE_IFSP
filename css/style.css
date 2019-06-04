@@ -40,6 +40,14 @@
 }
 
 .nav__script {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
   padding: 10px;
   position: fixed;
@@ -69,7 +77,12 @@
 }
 
 .nav__script ul li:hover {
-  background: rgba(255, 0, 106, 0.384);
+  background: rgba(243, 51, 131, 0.384);
+}
+
+.nav__script img {
+  width: 70px;
+  height: 50px;
 }
 
 header {
@@ -311,7 +324,7 @@ footer p {
   text-align: end;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background: #a9ffec60;
+  background: #00397971;
   z-index: 99;
 }
 
@@ -396,6 +409,7 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 3%;
 }
 
 .features div {
@@ -422,11 +436,181 @@ footer p {
   color: #ffffff;
   text-align: center;
   text-justify: auto;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .features img {
   width: 100px;
   padding: 2%;
+}
+
+.more {
+  text-transform: uppercase;
+  font-size: 24px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3%;
+}
+
+.more img {
+  width: 20px;
+}
+
+.more img:hover {
+  color: blue;
+}
+
+.more a {
+  text-decoration: none;
+  color: black;
+}
+
+.more a:hover {
+  color: blue;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: blue;
+}
+
+.video div {
+  margin: 3%;
+}
+
+.videos__title h1 {
+  color: blue;
+  text-align: center;
+  margin: 3%;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.responsive-table .table-header {
+  background-color: #95A5A6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.responsive-table .table-row {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-table .col-1 {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+.responsive-table .col-2 {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+@media all and (max-width: 767px) {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
+    display: block;
+  }
+  .responsive-table .col {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .responsive-table .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px 0;
+  }
+  .responsive-table .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 3%;
+  }
+  .features div {
+    margin: 5%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: -18%;
+  }
+  .video div {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
