@@ -68,6 +68,14 @@
   color: #0c4b07;
 }
 
+  .titulo__features{
+    text-align: center;
+    color: blue;
+    margin: 3%;
+  }
+
+
+
 .features{
   @include flex (center , space-around);
   flex-direction: row;
